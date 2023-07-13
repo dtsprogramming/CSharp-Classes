@@ -12,7 +12,6 @@ namespace CreatingClasses
         // Default constructor (no values).
         public Human()
         {
-            Console.WriteLine("Constructor called. Default Human object");
         }
 
         // Default constructor (optional values).
@@ -30,7 +29,7 @@ namespace CreatingClasses
             string plural = CheckAge();
 
             Console.WriteLine($"Hi, my name is {firstName} {lastName}. I am {age} {plural} old, " +
-                $"and I have {eyeColor} eyes.");
+                $"and I have {eyeColor} eyes.\n");
         }
 
         private string CheckAge() => (age == 1) ? "year" : "years";
