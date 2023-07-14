@@ -15,17 +15,17 @@ namespace CreatingClasses
             this.width = width;
             this.height = height;
         }
-        public void BoxValues()
-        {
-            volume = CalculateBoxVolume();
 
-            Console.WriteLine($"Length: {length}\nWidth: {width}\n" +
-                $"Height: {height}\nVolume: {volume}\n");
+        public int Volume
+        {
+            get => this.length * this.width * this.height;
+            set { this.volume = value; }
         }
 
-        private int CalculateBoxVolume()
+        public void BoxValues()
         {
-            return length * width * height;
+            Console.WriteLine($"Length: {length}\nWidth: {width}\n" +
+                $"Height: {height}\nVolume: {Volume}\n");
         }
     }
 }
