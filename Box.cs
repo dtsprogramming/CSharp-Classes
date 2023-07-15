@@ -18,8 +18,8 @@ namespace CreatingClasses
 
         public int Volume
         {
-            get => this.length * this.width * this.height;
-            set { this.volume = value; }
+            get => length * width * height;
+            private set { volume = value; }
         }
 
         public void BoxValues()
